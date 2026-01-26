@@ -7,7 +7,6 @@ Application web pour suivre ses dépenses, organiser ses catégories et visualis
 - React
 - TypeScript
 - Tailwind CSS
-- (Next.js / Vite) ← à ajuster selon ton setup
 
 ## ✨ Fonctionnalités
 
