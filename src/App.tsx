@@ -1,7 +1,19 @@
 import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Auth } from "./pages/auth";
+import { ExpenseTracker } from "./pages/expenseTracker";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Router>
+        <Routes>
+          <Route element={<Auth />} path="/" />
+          <Route element={<ExpenseTracker />} path="/exepense-tracker" />
+        </Routes>
+      </Router>
+    </>
+  );
 }
 
 export default App;
