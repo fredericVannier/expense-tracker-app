@@ -9,7 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route element={<Auth />} path="/" />
-          <Route element={<ExpenseTracker />} path="/exepense-tracker" />
+          <Route element={<ExpenseTracker />} path="/expense-tracker" />
         </Routes>
       </Router>
     </>
