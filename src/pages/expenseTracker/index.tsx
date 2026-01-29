@@ -1,11 +1,13 @@
 import type { FC } from "react";
 import { useState } from "react";
 import { useAddTransaction } from "../../hooks/useAddTransaction.js";
+import { useGetTransactions } from "../../hooks/useGetTransactions.js";
 
 type Transaction = "expense" | "income";
 
 export const ExpenseTracker: FC = () => {
   const { addTransaction } = useAddTransaction();
+  const { transactions } = useGetTransactions();
 
   const [description, setDescription] = useState<string>("");
   const [transactionAmount, setTransactionAmount] = useState<number>(0);
@@ -75,6 +77,19 @@ export const ExpenseTracker: FC = () => {
       </div>
       <div>
         <h3>transactions</h3>
+        <div>
+          {transactions.map((transaction) => {
+            const { description, transactionAmount, transactionType } =
+              transaction;
+            return (
+              <div>
+                <p>{transaction.userID}</p>
+                <p>{transaction.transactionAmount}</p>
+                <p>{transaction.transactionType}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </>
   );
