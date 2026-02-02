@@ -5,14 +5,14 @@ import { ExpenseTracker } from "./pages/expenseTracker";
 
 function App() {
   return (
-    <>
+    <div>
       <Router>
         <Routes>
           <Route element={<Auth />} path="/" />
           <Route element={<ExpenseTracker />} path="/expense-tracker" />
         </Routes>
       </Router>
-    </>
+    </div>
   );
 }
 
