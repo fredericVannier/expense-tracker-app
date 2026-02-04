@@ -1,8 +1,8 @@
 import type { FC } from "react";
 import { useState } from "react";
-import { useAddTransaction } from "../../hooks/useAddTransaction.js";
-import { useGetTransactions } from "../../hooks/useGetTransactions.js";
-import { useTransactionsSummary } from "../../hooks/useTransactionsSummary.js";
+import { useAddTransaction } from "../../hooks/useAddTransaction";
+import { useGetTransactions } from "../../hooks/useGetTransactions";
+import { useTransactionsSummary } from "../../hooks/useTransactionsSummary";
 
 export type TransactionType = "expense" | "income";
 
@@ -35,7 +35,7 @@ export const ExpenseTracker: FC = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-8">
+      <div className="bg-bg-primary flex flex-col gap-8">
         <div className="flex flex-col items-center">
           <h1 className="text-4xl">Expense Tracker</h1>
           <div className="flex items-center gap-3">
