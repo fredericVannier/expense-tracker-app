@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { auth, provider } from "./../../config/firebase-config.js";
+import { auth, provider } from "../../config/firebase-config";
 import { signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
@@ -14,7 +14,7 @@ export const Auth: FC = () => {
       isAuth: true,
     };
     localStorage.setItem("auth", JSON.stringify(authInfo));
-    navigate("/expense-tracker");
+    navigate("/dashboard");
   };
   return (
     <div>
