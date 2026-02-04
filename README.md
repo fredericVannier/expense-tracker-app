@@ -1,21 +1,21 @@
-# Expense Tracker 💸
+# Expense Tracker 
 
 Application web pour suivre ses dépenses, organiser ses catégories et visualiser ses habitudes financières.
 
-## 🚀 Stack
+## Stack
 
 - React
 - TypeScript
 - Tailwind CSS
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
 - Ajouter / supprimer des dépenses
 - Catégories personnalisées
 - Tableau de bord (à venir)
 - Dark mode (à venir)
 
-## 📦 Installation
+## Installation
 
 ```bash
 git clone git@github.com:fredericVannier/expense-tracker-app.git
