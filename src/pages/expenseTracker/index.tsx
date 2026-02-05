@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useAddTransaction } from "../../hooks/useAddTransaction";
 import { useGetTransactions } from "../../hooks/useGetTransactions";
 import { useTransactionsSummary } from "../../hooks/useTransactionsSummary";
+import type { TransactionCategory } from "../dashboard";
 
 export type TransactionType = "expense" | "income";
 
@@ -11,6 +12,7 @@ export type Transaction = {
   description: string;
   transactionAmount: number;
   transactionType: TransactionType;
+  transactionCategory: TransactionCategory;
   createdAt: string;
 };
 
@@ -30,6 +32,7 @@ export const ExpenseTracker: FC = () => {
       description,
       transactionAmount,
       transactionType,
+      transactionCategory,
     });
   };
 
